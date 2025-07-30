@@ -9,6 +9,15 @@ class student{
     private String name;
     private float mark;
 
+
+    // default constructor
+    student(){
+        this.rollno=1;
+        this.name="Default";
+        this.mark=96;
+    }
+
+    // parametrized constructor
     student(int rollno,String name,float mark){
        this.rollno=rollno;
        this.name=name;
@@ -52,14 +61,21 @@ public class constructorprgm{
     System.out.println("Enter Mark :");
     mark=sc.nextFloat();
     
-    student st=new student(rollno, name, mark);
-  
-    // st.displayDetails();
 
-    System.out.println("\nStudent Details:");
+    student st=new student();
+    System.out.println("\nDefault Student Details:");
     System.out.println("Student Roll No: " + st.getRollNo());
     System.out.println("Student Name: " + st.getName());
     System.out.println("Student Marks: " + st.getMark());
+
+    student st2=new student(rollno, name, mark);
+  
+    // st.displayDetails();
+
+    System.out.println("\nParametrized Student Details:");
+    System.out.println("Student Roll No: " + st2.getRollNo());
+    System.out.println("Student Name: " + st2.getName());
+    System.out.println("Student Marks: " + st2.getMark());
     sc.close();
     }
 }
