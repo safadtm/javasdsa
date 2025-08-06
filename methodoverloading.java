@@ -4,10 +4,10 @@ class VolumeCalculator {
     double width;
     double height;
 
-    void volume(double radius, double height) {
-        width = radius;
-        this.height = height;
-        double volume = Math.PI * radius * radius * height;
+    void volume(double r, double h) {
+        width = r;
+        height = h;
+        double volume = Math.PI * width * width * height;
         System.out.printf("Volume of Cylinder = %.2f\n", volume);
     }
 
