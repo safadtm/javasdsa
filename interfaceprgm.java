@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.Scanner;
-
 interface College{
     void departmentName();
     int numberOfStudents();
