@@ -47,8 +47,6 @@ public class constructoroverloading {
         System.out.println("First circle area = "+c1.getArea());
         System.out.println("Second circle area = "+c2.getArea());
 
-
-
         System.out.println("Enter the width of the rectangle : ");
         double width = sc.nextDouble();
         System.out.println("Enter the length of the rectangle : ");
